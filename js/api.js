@@ -8,7 +8,7 @@ function ajax() {
 
             // EXTRACT VALUE FOR HTML HEADER. 
             var col = [];
-            for (var i = 0; i < response.length; i++) {
+            for (var i = 1; i < response.length; i++) {
             for (var key in response[i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
@@ -22,7 +22,7 @@ function ajax() {
 
             var tr = table.insertRow(-1);                   // TABLE ROW.
 
-            for (var i = 0; i < col.length; i++) {
+            for (var i = 1; i < col.length; i++) {
             var th = document.createElement("th");      // TABLE HEADER.
             th.innerHTML = col[i];
             tr.appendChild(th);
@@ -34,7 +34,7 @@ function ajax() {
         for (var i = 0; i < response.length; i++) {
             tr = table.insertRow(-1);
 
-            for (var j = 0; j < col.length-1; j++) {
+            for (var j = 1; j < col.length-1; j++) {
                 var tabCell = tr.insertCell(-1);
                 tabCell.innerHTML = response[i][col[j]];
             }
