@@ -1,6 +1,6 @@
 function redirect(){
     // location.replace("main.html");
-    window.location("../main.html");
+    window.location= "../main.html";
 }
 
 function validate(callback){
