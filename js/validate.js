@@ -1,5 +1,5 @@
 function redirect(){
-    location.replace("../main.html");
+    location.replace("main.html");
 }
 
 function validate(callback){
