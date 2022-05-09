@@ -1,4 +1,7 @@
-
+#bodypic{ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
   #loginbox{
     margin-top: 5%;

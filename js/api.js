@@ -46,7 +46,7 @@ function ajax() {
                 // NOW HERE I AM CREATING AND ADDING A CHECKBOX TO THE TABLE CELL.
                 var chk = document.createElement('input');
                 chk.setAttribute('type', 'checkbox');
-                // tabCell.appendChild(chk);
+                tabCell.appendChild(chk);
                 // chk.id = "id" + i +j;
                 
 
@@ -66,7 +66,7 @@ function ajax() {
                         console.log("checked " + count);
                     }
                 })
-                tabCell.appendChild(chk);     
+                // tabCell.appendChild(chk);     
             }
             // console.log(chk.id);
             tr.style.border = "1px solid black";
