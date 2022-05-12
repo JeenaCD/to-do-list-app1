@@ -5,16 +5,19 @@ function ajax() {
     xhttp.onreadystatechange = function(){
         if(this.readyState ==4 && this.status ==200){
             var response = JSON.parse(this.responseText);
-
+            // console.log(response);
+            
             // EXTRACT VALUE FOR HTML HEADER. 
             var col = [];
-            for (var i = 1; i < response.length; i++) {
+            for (var i = 0; i < response.length; i++) {
             for (var key in response[i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
                 }
             }
             }
+            // console.log(col);
+
             // CREATE DYNAMIC TABLE.
             var table = document.createElement("table");
 
